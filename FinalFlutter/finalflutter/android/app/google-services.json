@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "865840200269",
+    "project_id": "finalflutter-af428",
+    "storage_bucket": "finalflutter-af428.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865840200269:android:82bccc846511a41039fa04",
+        "android_client_info": {
+          "package_name": "com.finalali.finalflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865840200269-dhqj5tt09ojvq7l8q6tulj1vsa1mei17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1_75hnNWw0vZkHXQea48VdhACS9tNGoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865840200269-dhqj5tt09ojvq7l8q6tulj1vsa1mei17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
