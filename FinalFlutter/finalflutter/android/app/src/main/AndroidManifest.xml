@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.finalali.finalflutter">
    <application
-        android:label="finalflutter"
+        android:label="AliExpress"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

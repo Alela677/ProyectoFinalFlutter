@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../api/productoscard.dart';
 import '../game/game.dart';
 import '../inicio/inicioview.dart';
 import 'utilsappbar.dart';
 
+// Widget que utilizamos para navegar entre la diferente vista de la aplicacion
 class MyAppBar extends StatefulWidget {
   const MyAppBar({super.key});
 
@@ -38,6 +36,7 @@ class _AppBarState extends State<MyAppBar> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          // Icono home nos lleva a la vista principal de la aplicacion
           IconOnTap(
             widget: const PantallaInicio(),
             widgeticon: IconAppBar(
@@ -45,6 +44,7 @@ class _AppBarState extends State<MyAppBar> {
               texto: 'Inicio',
             ),
           ),
+          // Icono shop nos lleva a la vista donde se encuentra el catalogo de productos de la aplicacion
           IconOnTap(
             widget: const ProductoCard(),
             widgeticon: IconAppBar(
@@ -52,6 +52,7 @@ class _AppBarState extends State<MyAppBar> {
               texto: 'Shop',
             ),
           ),
+          // Icono game que nos lleva al jeugo de las ofertas
           IconOnTap(
             widget: const GameWidget(),
             widgeticon: IconAppBar(

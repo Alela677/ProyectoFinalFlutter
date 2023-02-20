@@ -1,10 +1,10 @@
 import 'package:animated_background/animated_background.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../appBar/appbar.dart';
 
+// Widget que contiene la vista principal de la aplicacion
 class PantallaInicio extends StatefulWidget {
   const PantallaInicio({super.key});
 
@@ -14,6 +14,7 @@ class PantallaInicio extends StatefulWidget {
 
 class _PantallaInicioState extends State<PantallaInicio>
     with TickerProviderStateMixin {
+  // Opciones de las imagenes en movimiento que se muestra en el inicio
   ParticleOptions particleOptions = ParticleOptions(
     image: Image.network(
         'https://pngsnake.com/wp-content/uploads/2023/01/aliexpress-logo-png-2-1.png'),
@@ -29,10 +30,12 @@ class _PantallaInicioState extends State<PantallaInicio>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // AppBar personalizado con elq ue navegaremos por la aplicacion
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(100),
         child: MyAppBar(),
       ),
+      // Fondo animado con icono de la empresa
       body: AnimatedBackground(
         vsync: this,
         behaviour: RandomParticleBehaviour(
@@ -40,6 +43,7 @@ class _PantallaInicioState extends State<PantallaInicio>
         ),
         child: ListView(
           children: [
+            // GIF que se muestra en el incio de la aplicacion
             Padding(
               padding: const EdgeInsets.all(20),
               child: Image.network(
@@ -47,6 +51,7 @@ class _PantallaInicioState extends State<PantallaInicio>
                 width: 20,
               ),
             ),
+            // Texto de presentacion de la vista shop de la aplicacion
             Padding(
               padding: const EdgeInsets.all(12),
               child: TextoInicio(
@@ -56,6 +61,7 @@ class _PantallaInicioState extends State<PantallaInicio>
                     'Explora una amplia gama de lo mejor en AliExpress, ¡y encuentra la que mejor se te ajusta! Además de ofrecerte marcas de gran calidad.',
               ),
             ),
+            // Texto explicativo de la vista game  de la aplicacion
             Padding(
               padding: const EdgeInsets.all(12),
               child: TextoInicio(
@@ -71,6 +77,7 @@ class _PantallaInicioState extends State<PantallaInicio>
   }
 }
 
+// Widget quye utilizamos para crear los texto explicativos que se muestra en la vista de inicio
 // ignore: must_be_immutable
 class TextoInicio extends StatelessWidget {
   TextoInicio(

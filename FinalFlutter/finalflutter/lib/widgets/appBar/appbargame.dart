@@ -1,12 +1,10 @@
 import 'package:finalflutter/widgets/appBar/utilsappbar.dart';
 import 'package:finalflutter/widgets/game/puntuacionplayer.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../api/productoscard.dart';
-import '../game/game.dart';
 import '../inicio/inicioview.dart';
 
+// Widget que utilizamos para navegar entre la diferente vista de la aplicacion y una opcion que solo contiene la vista game
 class MyAppBarGame extends StatefulWidget {
   const MyAppBarGame({super.key});
 
@@ -37,6 +35,7 @@ class _AppBarState extends State<MyAppBarGame> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          // Icono home nos lleva a la vista principal de la aplicacion
           IconOnTap(
             widget: const PantallaInicio(),
             widgeticon: IconAppBar(
@@ -44,6 +43,7 @@ class _AppBarState extends State<MyAppBarGame> {
               texto: 'Inicio',
             ),
           ),
+          // Icono shop nos lleva a la vista donde se encuentra el catalogo de productos de la aplicacion
           IconOnTap(
             widget: const ProductoCard(),
             widgeticon: IconAppBar(
@@ -51,8 +51,9 @@ class _AppBarState extends State<MyAppBarGame> {
               texto: 'Shop',
             ),
           ),
+          // Iconon que nos muestra los resultado de todos los partipantes del juego de las ofertas
           IconOnTap(
-            widget: PuntosPlayer(),
+            widget: const PuntosPlayer(),
             widgeticon: IconAppBar(
               icon: Icons.list_alt,
               texto: 'Top',

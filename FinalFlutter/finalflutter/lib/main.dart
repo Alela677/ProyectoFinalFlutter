@@ -1,9 +1,9 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:finalflutter/widgets/inicio/inicioview.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 
+// Main que ejecuta la aplicacion
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -15,15 +15,16 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // Widget que lanza la aplicacion,contiene el widget de lapantalla de incio
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'AliExpress',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const PantallaInicio(),
+      home:
+          const PantallaInicio(), // Widget de la primera vista de la aplicacion
     );
   }
 }

@@ -1,11 +1,11 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../api/productoscard.dart';
+// Esta clase contiene algunos widget que utilizamos en la clase appbar y appbargame
 
+// Widget que muestra un icono y un texto que pasamos como parametro
 class IconAppBar extends StatelessWidget {
   IconAppBar({super.key, required this.icon, required this.texto});
   final IconData icon;
@@ -29,6 +29,8 @@ class IconAppBar extends StatelessWidget {
   }
 }
 
+//  Widget que aplica la logica a cada icono que pulsamos
+//  en esta caso nos redirige a la vista que pasamos por parametro
 class IconOnTap extends StatelessWidget {
   IconOnTap({super.key, required this.widget, required this.widgeticon});
   Widget widgeticon;
